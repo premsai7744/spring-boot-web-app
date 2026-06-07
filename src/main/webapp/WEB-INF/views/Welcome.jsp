@@ -13,6 +13,6 @@
 	Password:<input type="password" name="pword"><br></p>
 	<input type="submit" value="Login" style="background-color: green;color: white; font-size: medium; border-style: none;">
 	</form>
-	<p style="color: red;" >Don't have Account? <a href="user/register">Register</a> </p>
+	<p style="color: red;" >Don't have Account? <a href="/premit/user/register">Register</a> </p>
 </body>
 </html>
