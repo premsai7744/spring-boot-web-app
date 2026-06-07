@@ -60,4 +60,47 @@ public class WelcomeController {
 		
 		return modelAndView;
 	}
+	
+	@RequestMapping(path = "/user/login",method=RequestMethod.POST)
+	public ModelAndView userLogin(HttpServletRequest request) {
+		System.out.println("****userLogin() method****");
+		String uName = request.getParameter("uname");
+		String pWord = request.getParameter("pword");
+		System.out.println("Username : "+uName);
+		System.out.println("Password : "+pWord);
+		
+		String result = ecomUserService.userLogin(uName, pWord);
+		
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("Result2");
+		modelAndView.addObject("result", result);
+		
+		return modelAndView;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

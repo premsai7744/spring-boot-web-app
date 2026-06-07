@@ -49,4 +49,13 @@ public class EcomUserService {
 			}
 		}
 	}
+	
+	public String userLogin(String userName,String password) {
+		EcomUser user = ecomUserRepository.findByUserNameAndPassword(userName, password);
+		if(user!=null) {
+			return "Login successfull for user : "+user.getFirstName();
+		} else {
+			return "Login failed! Please try again with valid credentials.";
+		}
+	}
 }

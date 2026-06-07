@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="user/login" method="post">
+	<form action="/premit/user/login" method="post">
 	<h2 style="color:orange; font-style: italic; font: cursive;">Welcome to E-Commerce</h2>
-	<p style="color:blue; font-weight: bold;">UserName:<input type="text" name="uname"><br>
+	<p style="color:blue; font-weight: bold;">
+	UserName:<input type="text" name="uname"><br>
 	Password:<input type="password" name="pword"><br></p>
 	<input type="submit" value="Login" style="background-color: green;color: white; font-size: medium; border-style: none;">
 	</form>

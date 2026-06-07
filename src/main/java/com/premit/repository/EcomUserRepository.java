@@ -7,5 +7,6 @@ import com.premit.entity.EcomUser;
 
 @Repository
 public interface EcomUserRepository extends JpaRepository<EcomUser, String>{
-
+	
+	EcomUser findByUserNameAndPassword(String userName,String password);
 }
